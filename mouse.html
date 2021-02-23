@@ -1,0 +1,31 @@
+<html> 	
+<head> 	
+<script language="javascript"> 	
+function preload() 	
+{ 	
+topon=new Image(100,50); 	
+topon.src=" https://upload.wikimedia.org/wikipedia/commons/1/1f/Thangal_Kunju_Musaliar_College_of_Engineering%2C_Kollam%2C_Kerala.jpg     "; 	
+topoff=new Image(260,280); 	
+topoff.src=" https://upload.wikimedia.org/wikipedia/en/0/02/Tkmlogo.jpg       "; 	
+} 	
+function myMouseOn(n) 	
+{ 	
+preload(); 	
+imageON=eval(n+"on.src"); 	
+document.images[n].src=imageON; 	
+} 	
+function myMouseOff(n) 	
+{ 	
+imageOFF=eval(n+"off.src"); 	
+document.images[n].src=imageOFF; 	
+} 	
+</script> 	
+</head> 	
+<body > 	
+<h2> Demo for mouse over</h2> 	
+<a href="#" onMouseOut="myMouseOff('top')"; onMouseOver="myMouseOn('top')";> 	
+<img src="Koala.jpg" alt="Show Next" name="top"> 	
+</a> 	
+</body> 	
+</html>	
+	
